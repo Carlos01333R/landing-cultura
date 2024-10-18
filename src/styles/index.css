@@ -1,0 +1,13 @@
+@font-face {
+  font-family: "Playfair Display Black";
+  src: url("/src/assets/fonts/PlayfairDisplay-Black.ttf") format("truetype");
+  font-weight: 900; /* Ajusta el peso de la fuente */
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Playfair Display Regular";
+  src: url("/src/assets/fonts/PlayfairDisplay-Regular.ttf") format("truetype");
+  font-weight: 400; /* Ajusta el peso de la fuente */
+  font-style: normal;
+}
