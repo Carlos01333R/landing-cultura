@@ -3,6 +3,7 @@ import Layout from "../layouts/Layout.astro";
 import Gallery from "../components/galeria";
 import AudioComponent from "../components/Audio";
 import InfoComponent from "../components/Info";
+import DescargarDocumento from "../components/descargarDocumento";
 ---
 
 <Layout title="Influencia africana en la musica y la danza en cartagena">
@@ -14,21 +15,17 @@ import InfoComponent from "../components/Info";
       Sumérgete en la tradición caribeña a través de videos, audios y más.
     </p>
 
-    <button
-      style={{
-        backgroundImage:
-          "linear-gradient(180deg, #4f3f66 0%, #3b2e5f 25%, #1f1f59 50%, #001253 75%, #00004e 100%)",
-      }}
-      class="py-2 px-4 rounded-xl mt-2 mb-1">Descargar Documento</button
-    >
-    <video
-      src="/baile.mp4"
-      controls
-      poster="/poster.jpg"
-      class="mt-4 rounded-xl w-full"
-    >
-      Tu navegador no admite el elemento <code>video</code>.
-    </video>
+    <DescargarDocumento client:load />
+    <iframe
+      width="800"
+      height="400"
+      src="https://www.youtube.com/embed/61gcoS_5sMQ?si=Vg_rN8MSgEjLS-5j"
+      title="YouTube video player"
+      frameborder="0"
+      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+      referrerpolicy="strict-origin-when-cross-origin"
+      allowfullscreen
+      class="rounded-xl"></iframe>
   </section>
   <Gallery client:load />
   <AudioComponent client:load />
