@@ -11,13 +11,13 @@ export default function AudioComponent() {
 
       <div className="w-full flex flex-col md:flex-row gap-2">
         <AudioPlayerWithSmallCover
-          src="/carlos_dulce.mp3"
+          src="/audio1.mp3"
           coverSrc="/poster.jpg"
           title="Introducción a la música y la danza en Cartagena"
           artist="Yelidza Batista"
         />
         <AudioPlayerWithSmallCover
-          src="/carlos_dulce.mp3"
+          src="/audio1.mp3"
           coverSrc="/poster.jpg"
           title="Introducción a la música y la danza en Cartagena"
           artist="Yelidza Batista"
