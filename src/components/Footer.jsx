@@ -11,7 +11,7 @@ export default function FooterComponent() {
     >
       <div className="w-full flex justify-center items-center">
         <p className="font-playfairRegular text-sm text-center">
-          © 2024 Carlos Rodriguez | ❣️ Yelidza Batista
+          © 2024 Carlos Rodriguez | 💔 Yelidza Batista
         </p>
       </div>
     </footer>
