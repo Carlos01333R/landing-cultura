@@ -36,16 +36,33 @@ export default function HeaderComponent() {
           </DropdownTrigger>
           <DropdownMenu aria-label="Static Actions">
             <DropdownItem key="new">
-              <a href="https://www.youtube.com/watch?v=61gcoS_5sMQ">Youtube</a>
+              <a
+                target="_blank"
+                href="https://www.youtube.com/watch?v=61gcoS_5sMQ"
+              >
+                Youtube
+              </a>
             </DropdownItem>
             <DropdownItem key="copy">
-              <a href="">Facebook</a>
+              <a href="https://www.facebook.com/profile.php?id=61567040116769&rdid=3a9rRhpxAMwC54pT&share_url=https%3A%2F%2Fwww.facebook.com%2Fshare%2FdCDjCvGxZfvDWhgu%2F">
+                Facebook
+              </a>
             </DropdownItem>
             <DropdownItem key="edit">
-              <a href="">Instagram</a>
+              <a
+                target="_blank"
+                href="https://www.instagram.com/p/DBdLRdLuvqH/?next=%2F"
+              >
+                Instagram
+              </a>
             </DropdownItem>
-            <DropdownItem key="delete">
-              <a href="">Soundcloud</a>
+            <DropdownItem>
+              <a
+                target="_blank"
+                href="https://soundcloud.com/user-65155407/ritmos-y-voces-musica-y-cultura-en-la-cartagena?si=0b072e6db1cb41e8895873037554da0f&utm_source=clipboard&utm_medium=text&utm_campaign=social_sharing"
+              >
+                Soundcloud
+              </a>
             </DropdownItem>
           </DropdownMenu>
         </Dropdown>

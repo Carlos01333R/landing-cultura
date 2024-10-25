@@ -1,4 +1,5 @@
 import AudioPlayerWithSmallCover from "./AudioPlayerWithSmallCover";
+
 export default function AudioComponent() {
   return (
     <section className="w-full flex flex-col justify-center items-center mt-14">
@@ -11,13 +12,7 @@ export default function AudioComponent() {
 
       <div className="w-full flex flex-col md:flex-row gap-2">
         <AudioPlayerWithSmallCover
-          src="/audio1.mp3"
-          coverSrc="/poster.jpg"
-          title="Introducción a la música y la danza en Cartagena"
-          artist="Yelidza Batista"
-        />
-        <AudioPlayerWithSmallCover
-          src="/audio1.mp3"
+          src="/Ritmos_Y_Voces_Música_Y_Cultura_En_La_Cartagena.mp3"
           coverSrc="/poster.jpg"
           title="Introducción a la música y la danza en Cartagena"
           artist="Yelidza Batista"

@@ -2,10 +2,11 @@ import { useState } from "react";
 import { ChevronLeft, ChevronRight } from "lucide-react";
 
 const images = [
-  "https://cdn.colombia.com/images/v2/colombia-info/folclor/region-caribe/bailes-800.jpg",
-  "https://i0.wp.com/paisposible.info/wp-content/uploads/2021/12/carnaval-barranquilla-2020.jpg?resize=800%2C468&ssl=1",
+  "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhD8I82TIyK2Jpw6blIEgR7qD70Y864FfbT_m1QMrfMqqEu_W6Fl73hKXvLniOZ3J6311he2gAr10SPkvEpcjJja9csC7YOmG2Ig608qkMxd-zNXs7TKliRewfh0h0QPN0Hs4C2awBJAA/s1600/afros_dos.jpg",
+  "https://i.ytimg.com/vi/bpB-mW_jDcE/maxresdefault.jpg",
   "https://www.elinformador.com.co/images/stories/sociales/2020/03-marzo/05social_2.jpg",
-  "https://www.gannett-cdn.com/presto/2021/10/04/PPHX/6bee9625-c68a-46d7-885d-cba08a7ef130-929c4508-b7eb-4022-a2f4-36c91411caf4.jpeg",
+  "https://c8.alamy.com/comp/2H8FHG2/champeta-music-group-los-reyes-de-la-champeta-close-the-last-day-of-the-idartes-10-aos-musical-festival-that-carries-rock-metal-punk-salsa-and-hip-hop-music-across-two-weekends-20-21-and-27-28-of-november-at-the-simon-bolivar-park-and-scenario-la-media-torta-in-bogota-colombia-on-november-28-2021-2H8FHG2.jpg",
+  "https://www.elpolideportivo.com/wp-content/uploads/2022/07/HIP-HOP-2.jpg",
 ];
 
 export default function Carrusel() {
