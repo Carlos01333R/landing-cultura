@@ -1,0 +1,57 @@
+---
+import Layout from "../layouts/Layout.astro";
+
+const redes = [
+  {
+    name: "Facebook",
+    link: "https://www.facebook.com/profile.php?id=61567040116769&mibextid=ZbWKwL",
+    icon: "https://static.vecteezy.com/system/resources/previews/016/716/447/non_2x/facebook-icon-free-png.png",
+  },
+  {
+    name: "Instagram",
+    link: "https://www.instagram.com/yelidza_batista?igsh=MWViZDdjdWNoMnpxaA==",
+    icon: "https://static.vecteezy.com/system/resources/previews/018/930/413/non_2x/instagram-logo-instagram-icon-transparent-free-png.png",
+  },
+  {
+    name: "YouTube",
+    link: "https://youtu.be/61gcoS_5sMQ",
+    icon: "https://static.vecteezy.com/system/resources/previews/023/986/704/non_2x/youtube-logo-youtube-logo-transparent-youtube-icon-transparent-free-free-png.png",
+  },
+  {
+    name: "SoundCloud",
+    link: "https://soundcloud.com/user-65155407/ritmos-y-voces-musica-y-cultura-en-la-cartagena?si=99756630501e452d88a29849a3d4a15f&utm_source=clipboard&utm_medium=text&utm_campaign=social_sharing",
+    icon: "https://static.vecteezy.com/system/resources/previews/027/224/011/non_2x/soundcloud-3d-logo-free-png.png",
+  },
+];
+---
+
+<Layout title="Redes Sociales">
+  <section class="w-full h-auto flex flex-col justify-center items-center">
+    <h4
+      class="text-4xl font-playfair w-full md:w-full text-center font-bold mt-5"
+    >
+      Redes Sociales
+    </h4>
+    <p class="text-lg mt-2 text-center font-bold">
+      Síguenos en nuestras redes para más contenido cultural y novedades sobre
+      nuestros eventos y producciones.
+    </p>
+    <div class="flex flex-wrap justify-center items-center mt-10 gap-x-5 mb-40">
+      {
+        redes.map((redes) => (
+          <a
+            href={redes.link}
+            class="flex"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <section class="flex flex-col items-center">
+              <img src={redes.icon} alt={redes.name} class="w-[100px] h-auto" />
+              <p class="text-xl font-bold mt-2">{redes.name}</p>
+            </section>
+          </a>
+        ))
+      }
+    </div>
+  </section>
+</Layout>

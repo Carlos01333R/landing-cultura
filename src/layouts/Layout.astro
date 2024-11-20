@@ -22,8 +22,8 @@ const { title } = Astro.props;
     <meta name="generator" content={Astro.generator} />
     <title>{title}</title>
   </head>
-  
- <HeaderComponent client:load />
+
+  <HeaderComponent client:load />
   <body>
     <main class="font-playfair">
       <slot />
@@ -31,19 +31,26 @@ const { title } = Astro.props;
   </body>
   <FooterComponent client:load />
 
-
   <style is:global>
     :root {
       background-image: linear-gradient(
-        180deg,
-        #4f3f66 0,
-        #3b2e5f 25%,
-        #1f1f59 50%,
-        #001253 75%,
-        #00004e 100%
+        to right top,
+        #d16ba5,
+        #c777b9,
+        #ba83ca,
+        #aa8fd8,
+        #9a9ae1,
+        #989ce9,
+        #949ef2,
+        #90a0fa,
+        #a496ff,
+        #bf89ff,
+        #de76ff,
+        #ff5af8
       );
       font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
         "Lucida Sans", Arial, sans-serif;
+      scrollbar-width: thin;
     }
     html {
       font-family: system-ui, sans-serif;

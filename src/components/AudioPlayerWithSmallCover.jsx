@@ -106,12 +106,12 @@ export default function AudioPlayerWithSmallCover({
     <div
       style={{
         backgroundImage:
-          "linear-gradient(180deg, #4f3f66 0%, #3b2e5f 25%, #1f1f59 50%, #001253 75%, #00004e 100%)",
+          "linear-gradient(to left, #ff6a0e, #ff413f, #ff0066, #fb008f, #da00b6)",
       }}
-      className="w-full max-w-md mx-auto shadow-lg rounded-lg overflow-hidden"
+      className="w-full md:w-[550px] h-auto  mx-auto shadow-lg rounded-lg overflow-hidden"
     >
       <div className="flex justify-center items-center pt-4">
-        <div className="relative w-20 h-20">
+        <div className="relative w-28 h-28">
           <img
             src={coverSrc}
             alt={`Cover art for ${title} by ${artist}`}

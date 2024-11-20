@@ -3,31 +3,49 @@ import Layout from "../layouts/Layout.astro";
 import Gallery from "../components/galeria";
 import AudioComponent from "../components/Audio";
 import InfoComponent from "../components/Info";
+import AvatarComponent from "../components/Avatar";
+import AudioPlayer from "../components/AudioDeFonde";
+
+const images = [
+  "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhD8I82TIyK2Jpw6blIEgR7qD70Y864FfbT_m1QMrfMqqEu_W6Fl73hKXvLniOZ3J6311he2gAr10SPkvEpcjJja9csC7YOmG2Ig608qkMxd-zNXs7TKliRewfh0h0QPN0Hs4C2awBJAA/s1600/afros_dos.jpg",
+  "https://i.ytimg.com/vi/bpB-mW_jDcE/maxresdefault.jpg",
+  "https://www.elinformador.com.co/images/stories/sociales/2020/03-marzo/05social_2.jpg",
+  "https://c8.alamy.com/comp/2H8FHG2/champeta-music-group-los-reyes-de-la-champeta-close-the-last-day-of-the-idartes-10-aos-musical-festival-that-carries-rock-metal-punk-salsa-and-hip-hop-music-across-two-weekends-20-21-and-27-28-of-november-at-the-simon-bolivar-park-and-scenario-la-media-torta-in-bogota-colombia-on-november-28-2021-2H8FHG2.jpg",
+  "https://www.elpolideportivo.com/wp-content/uploads/2022/07/HIP-HOP-2.jpg",
+];
 ---
 
 <Layout title="Influencia africana en la musica y la danza en cartagena">
   <section class="w-full flex flex-col justify-center items-center">
-    <h1 class="text-4xl font-playfair w-full md:w-[70%] text-center">
+    <h1 class="text-6xl font-playfair w-full md:w-full text-center font-bold">
       La influencia africana en la musica y la danza en cartagena
     </h1>
-    <p class="text-sm mt-2 text-center font-playfairRegular">
+    <p class="text-sm mt-2 text-center font-bold">
       Sumérgete en la tradición caribeña a través de videos, audios y más.
     </p>
 
-    <div class="mt-10 w-full mx-auto">
-      <iframe
-        width="100%"
-        height="400"
-        src="https://www.youtube.com/embed/61gcoS_5sMQ?si=Vg_rN8MSgEjLS-5j"
-        title="YouTube video player"
-        frameborder="0"
-        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-        referrerpolicy="strict-origin-when-cross-origin"
-        allowfullscreen
-        class="rounded-xl"></iframe>
-    </div>
+    <section class="w-full flex flex-col justify-center items-center">
+      <img
+        class="w-full object-cover rounded-xl"
+        src="/public/imagen.png"
+        alt=""
+      />
+    </section>
   </section>
-  <Gallery client:load />
-  <AudioComponent client:load />
+  <AudioPlayer client:load />
+  <Gallery
+    title={"Galería de Imágenes"}
+    subtitle={"Explora la belleza visual de nuestros bailes folclóricos."}
+    description={"Una serie de imágenes sobre el tema La influencia africana en la músicy la danza en Cartagena podría capturar escenas que reflejan la ricaherencia cultural africana en esta región de Colombia."}
+    images={images}
+    client:load
+  />
+  <AudioComponent
+    src={"/Ritmos_Y_Voces_Música_Y_Cultura_En_La_Cartagena.mp3"}
+    coverSrc={"/poster.jpg"}
+    title={"Introducción a la música y la danza en Cartagena"}
+    artist={"Yelidza Batista"}
+    client:load
+  />
   <InfoComponent client:load />
 </Layout>

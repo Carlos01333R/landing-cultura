@@ -1,8 +1,8 @@
 import AudioPlayerWithSmallCover from "./AudioPlayerWithSmallCover";
 
-export default function AudioComponent() {
+export default function AudioComponent({ src, coverSrc, title, artist }) {
   return (
-    <section className="w-full flex flex-col justify-center items-center mt-14">
+    <section className="w-full flex flex-col justify-center items-center mt-5">
       <h2 className="text-4xl font-playfair w-full md:w-[70%] text-center">
         Audios utilizados
       </h2>
@@ -12,10 +12,10 @@ export default function AudioComponent() {
 
       <div className="w-full flex flex-col md:flex-row gap-2">
         <AudioPlayerWithSmallCover
-          src="/Ritmos_Y_Voces_Música_Y_Cultura_En_La_Cartagena.mp3"
-          coverSrc="/poster.jpg"
-          title="Introducción a la música y la danza en Cartagena"
-          artist="Yelidza Batista"
+          src={src}
+          coverSrc={coverSrc}
+          title={title}
+          artist={artist}
         />
       </div>
     </section>

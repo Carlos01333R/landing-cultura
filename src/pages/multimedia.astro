@@ -1,0 +1,37 @@
+---
+import ComponentTable from "../components/Table";
+import Layout from "../layouts/Layout.astro";
+import Gallery from "../components/galeria";
+import AudioComponent from "../components/Audio";
+
+const images = [
+  "https://c8.alamy.com/comp/2H8FHG2/champeta-music-group-los-reyes-de-la-champeta-close-the-last-day-of-the-idartes-10-aos-musical-festival-that-carries-rock-metal-punk-salsa-and-hip-hop-music-across-two-weekends-20-21-and-27-28-of-november-at-the-simon-bolivar-park-and-scenario-la-media-torta-in-bogota-colombia-on-november-28-2021-2H8FHG2.jpg",
+  "/galeria3.jpg",
+  "/galeria1.jpg",
+  "/galeria2.jpg",
+];
+---
+
+<Layout title="Multimedia">
+  <section class="w-full flex flex-col justify-center items-center">
+    <AudioComponent
+      src={"/audioMultimedia.mp3"}
+      coverSrc={"https://i.ytimg.com/vi/_jES47VlTCo/hq720.jpg?sqp=-oaymwE7CK4FEIIDSFryq4qpAy0IARUAAAAAGAElAADIQj0AgKJD8AEB-AH-CYAC0AWKAgwIABABGH8gOCghMA8=&rs=AOn4CLBWiswVFM91oMFu7-M36dGiD3MAsA"}
+      title={"Clips de audio de champeta "}
+      artist={"Mr black"}
+      client:load
+    />
+
+    <Gallery
+      title={"Galería de Imágenes"}
+      subtitle={"Explora la belleza visual de nuestros bailes folclóricos."}
+      description={"Esta galería celebra la autenticidad y el talento de los músicos locales, los sonidos ancestrales de nuestros instrumentos tradicionales, y la belleza vibrante de las danzas típicas cartageneras. Cada imagen es un testimonio vivo de nuestras raíces y del legado que sigue inspirando a generaciones. ¡Déjate llevar por la magia de nuestras tradiciones!"}
+      images={images}
+      client:load
+    />
+    <h2 class="text-4xl font-playfair w-full md:w-[70%] text-center mb-5 mt-10">
+      Tabla Multimedia
+    </h2>
+    <ComponentTable client:load />
+  </section>
+</Layout>

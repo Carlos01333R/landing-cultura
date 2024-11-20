@@ -1,0 +1,29 @@
+---
+import Layout from "../layouts/Layout.astro";
+import ModalHistoria from "../components/ModalHistoria";
+import AudioComponent from "../components/Audio";
+---
+
+<Layout title="Historias">
+  <section class="w-full flex flex-col justify-center items-center">
+    <section class="w-full flex flex-col justify-center items-center">
+      <AudioComponent
+        src={"/Cumbia.mp3"}
+        coverSrc={"/poster.jpg"}
+        title={"Música instrumental de cumbia"}
+        artist={"Cumbia"}
+        client:load
+      />
+
+      <h5 class="text-5xl font-bold text-center mt-10 mb-4">Infografia</h5>
+      <img
+        class="rounded-xl mt-5"
+        src="/public/infografia.jpg"
+        alt="Infografia"
+      />
+      <article class="mt-5">
+        <ModalHistoria client:load />
+      </article>
+    </section>
+  </section>
+</Layout>
