@@ -42,7 +42,7 @@ export default function ModalHistoria() {
                     <div class="w-full flex justify-center items-center">
                       <img
                         class="h-[380px] rounded-xl"
-                        src="/public/paisaje1.jpg"
+                        src="/paisaje1.jpg"
                         alt="paisaje"
                         className="rounded-xl"
                       />
