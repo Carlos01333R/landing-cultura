@@ -1,35 +1,62 @@
 ---
 import Layout from "../layouts/Layout.astro";
 import Gallery from "../components/galeria";
-import AudioComponent from "../components/Audio";
 import InfoComponent from "../components/Info";
-import AvatarComponent from "../components/Avatar";
 import AudioPlayer from "../components/AudioDeFonde";
+import AudioPlayerVoz from "../components/Voz";
+import VideosComponent from "../components/Videos";
 
-const images = [
-  "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhD8I82TIyK2Jpw6blIEgR7qD70Y864FfbT_m1QMrfMqqEu_W6Fl73hKXvLniOZ3J6311he2gAr10SPkvEpcjJja9csC7YOmG2Ig608qkMxd-zNXs7TKliRewfh0h0QPN0Hs4C2awBJAA/s1600/afros_dos.jpg",
-  "https://i.ytimg.com/vi/bpB-mW_jDcE/maxresdefault.jpg",
-  "https://www.elinformador.com.co/images/stories/sociales/2020/03-marzo/05social_2.jpg",
-  "https://c8.alamy.com/comp/2H8FHG2/champeta-music-group-los-reyes-de-la-champeta-close-the-last-day-of-the-idartes-10-aos-musical-festival-that-carries-rock-metal-punk-salsa-and-hip-hop-music-across-two-weekends-20-21-and-27-28-of-november-at-the-simon-bolivar-park-and-scenario-la-media-torta-in-bogota-colombia-on-november-28-2021-2H8FHG2.jpg",
-  "https://www.elpolideportivo.com/wp-content/uploads/2022/07/HIP-HOP-2.jpg",
-];
+const images = ["/1.jpg", "/2.jpg", "/3.jpg", "/4.jpg", "/5.jpg"];
 ---
 
 <Layout title="Influencia africana en la musica y la danza en cartagena">
-  <section class="w-full flex flex-col justify-center items-center">
-    <h1 class="text-6xl font-playfair w-full md:w-full text-center font-bold">
-      La influencia africana en la musica y la danza en cartagena
+  <section
+    class="w-full flex flex-col justify-center items-center mt-5 md:mt-10"
+  >
+    <h1
+      class="text-4xl flex items-center md:text-6xl font-playfair w-full md:w-full text-center font-bold"
+    >
+      La influencia africana en la musica y la danza Cartagenera
     </h1>
-    <p class="text-sm mt-2 text-center font-bold">
+    <p class="text-lg text-center font-bold mt-2">
       Sumérgete en la tradición caribeña a través de videos, audios y más.
     </p>
 
     <section class="w-full flex flex-col justify-center items-center">
-      <img
-        class="w-full object-cover rounded-xl"
-        src="/public/imagen.png"
-        alt=""
-      />
+      <img class="w-full object-cover rounded-xl" src="/imagen.png" alt="" />
+    </section>
+  </section>
+
+  <section class="w-full mt-14 md:mt-20 mb-20">
+    <h5 class="text-3xl md:text-5xl w-full text-center mb-10">
+      Explora con IA
+    </h5>
+    <section class="flex flex-col md:flex-row">
+      <div class="w-full md:w-[50%] flex flex-col justify-center items-center">
+        <a
+          target="_blank"
+          class="border-2 bg-white border-white px-4 py-4 rounded-xl text-black hover:bg-slate-100 hover:text-black hover:border-slate-100 hover:transition-all text-xl md:text-2xl"
+          href="https://chatgpt.com/"
+        >
+          ¿Tienes alguna pregunta?
+        </a>
+        <p
+          class="font-playfair mt-5 text-center text-white text-xl md:text-2xl"
+        >
+          Pregunta lo que quieras sobre la cultura cartagenera, la música y la
+          danza. Nuestra IA responderá tus inquietudes.
+        </p>
+      </div>
+
+      <div class="w-full md:w-[50%] flex flex-col justify-center items-center">
+        <img
+          class="w-[400px]"
+          src="/videoAvatar1.gif"
+          alt="videoAvatar"
+          class="rounded-xl"
+        />
+        <AudioPlayerVoz src={"/voz.mp3"} client:load />
+      </div>
     </section>
   </section>
   <AudioPlayer client:load />
@@ -40,12 +67,7 @@ const images = [
     images={images}
     client:load
   />
-  <AudioComponent
-    src={"/Ritmos_Y_Voces_Música_Y_Cultura_En_La_Cartagena.mp3"}
-    coverSrc={"/poster.jpg"}
-    title={"Introducción a la música y la danza en Cartagena"}
-    artist={"Yelidza Batista"}
-    client:load
-  />
+  <VideosComponent client:load />
+
   <InfoComponent client:load />
 </Layout>

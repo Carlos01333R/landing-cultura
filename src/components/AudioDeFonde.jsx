@@ -7,7 +7,7 @@ const AudioPlayer = () => {
     const audio = audioRef.current;
     if (audio) {
       audio.loop = true; // Activar el loop
-      audio.volume = 0.1; // Establecer el volumen al 10%
+      audio.volume = 0.05; // Establecer el volumen al 10%
       audio.play().catch((error) => {
         console.error("El audio no se pudo reproducir automáticamente:", error);
       });

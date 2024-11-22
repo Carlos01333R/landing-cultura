@@ -19,7 +19,11 @@ export default function HeaderComponent() {
     >
       <div className="flex gap-x-2 justify-center items-center">
         <a href="/" className="flex gap-x-2 items-center">
-          <img className="w-10 h-10 rounded-full" src="/logo.png" alt="" />
+          <img
+            className="w-10 h-10 rounded-full object-center"
+            src="/perfil.jpg"
+            alt=""
+          />
           <p>Yelidza Batista</p>
         </a>
       </div>
@@ -42,8 +46,24 @@ export default function HeaderComponent() {
       <div className="block md:hidden">
         <Dropdown>
           <DropdownTrigger>
-            <button>
-              <img src="/src/icons/menu.svg" alt="menu" />
+            <button className="focus:outline-none">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                class="icon icon-tabler icons-tabler-outline icon-tabler-menu-2"
+              >
+                <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                <path d="M4 6l16 0" />
+                <path d="M4 12l16 0" />
+                <path d="M4 18l16 0" />
+              </svg>
             </button>
           </DropdownTrigger>
           <DropdownMenu aria-label="Static Actions">

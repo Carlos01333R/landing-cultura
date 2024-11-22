@@ -9,10 +9,10 @@ export default function FooterComponent() {
       }}
       className="w-full mx-auto flex justify-between items-center py-2 px-4 text-white  rounded-xl mb-2  shadow-orange-200 font-playfair mt-20"
     >
-      <div className="w-full flex justify-center items-center">
-        <p className="font-playfairRegular text-sm text-center">
-          Yelidza Batista
-        </p>
+      <div className="w-full flex flex-col justify-center items-center">
+        <p className="">Contacto:</p>
+        <p>Yvbatistag@unadvirtual.edu.co</p>
+        <p>3233598164</p>
       </div>
     </footer>
   );

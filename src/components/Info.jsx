@@ -1,16 +1,16 @@
 export default function InfoComponent() {
   return (
-    <section class="w-full flex flex-col justify-center items-center mt-14 mb-2">
-      <h2 class="text-4xl font-playfair w-full md:w-[70%] text-center mt-2 mb-2">
+    <section class="w-full flex flex-col justify-center items-center mt-20 mb-2">
+      <h2 class="text-3xl md:text-5xl font-playfair w-full  text-center mt-2 mb-2">
         Descripción de la página web
       </h2>
 
       <img
-        src="https://h5p.org/sites/default/files/h5p/content/620427/images/file-5da0eba6d5f09.jpg"
+        src="/info.jpg"
         alt="foto del proyecto"
-        class="w-32 h-32 rounded-full mt-3 mb-3 object-cover"
+        class="w-[450px] mt-10 mb-10 rounded-xl object-cover"
       />
-      <p class="text-sm font-playfairRegular w-full md:w-[70%] mb-5 ">
+      <p class="text-lg font-playfairRegular w-full md:w-[85%] mb-5  ">
         La página web está diseñada para ser una plataforma interactiva que
         celebre y difunda la rica herencia cultural de Cartagena,
         específicamente la influencia africana en sus expresiones musicales y
